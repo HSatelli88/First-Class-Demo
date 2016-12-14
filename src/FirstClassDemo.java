@@ -7,7 +7,7 @@ public class FirstClassDemo
 		{
 			foo();
 			int addi=FirstClassDemo.sum(40,50); //Static so called using class name 
-			FirstClassDemo obj1=new FirstClassDemo(); // non-static so created an object
+			FirstClassDemo obj1=new FirstClassDemo(); // non-static so created an object -- @hitesh: Use some default methods available from Object class on this object and understand it's usage.
 			int minu=obj1.subs(50,10);
 			System.out.println("Addition is :"+addi);
 			System.out.println("Substraction is:"+minu);
@@ -32,7 +32,7 @@ public class FirstClassDemo
 			}
 		}
 
-		final static void finalkey() //Final KeyWord
+		final static void finalkey() //Final KeyWord -- @hitesh: This isn't the correct way of using final keyword
 		{
 			FirstClassDemo obj2=new FirstClassDemo();
 			System.out.println("Value of x is"+obj2.x); //Trying to access first x&y values as i'm extending class A
